@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smash or Pass</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="age-verification">
+    <h1>¿Quieres entrar?</h1>
+    <button id="confirm-age">Confirmar</button>
+  </div>
+  <input type="text" id="search-bar" placeholder="Busca por categorías (ej: anime, cosplay)">
+  <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  <div class="side-indicator left"><span>❌</span></div>
+  <div class="side-indicator right"><span>❤️</span></div>
+  <div class="side-indicator up"><span>📤</span></div>
+  <div class="side-indicator down"><span>⬇️</span></div>
+  <div class="card-container"></div>
+  <button id="round-mode-toggle">Activar Modo Ronda (100 imágenes)</button>
+  <div id="round-summary">
+    <h2>Resumen de la Ronda</h2>
+    <div id="rosco-container">
+      <canvas id="rosco-canvas" width="150" height="150"></canvas>
+      <span id="rosco-percentage">0%</span>
+    </div>
+    <div class="summary-section" id="smash-section">
+      <h3>Smash (❤️)</h3>
+      <div id="smash-images"></div>
+    </div>
+    <div class="summary-section" id="pass-section">
+      <h3>Pass (❌)</h3>
+      <div id="pass-images"></div>
+    </div>
+    <button id="restart-round">Volver a Jugar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
